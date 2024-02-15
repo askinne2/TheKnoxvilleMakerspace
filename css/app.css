@@ -162,6 +162,10 @@ img {
 	
 }
 
+.home-blocks {
+	padding: 2% 0;
+}
+
 .hero {
 	background-color: var(--hotel-blue);
 	padding-top: 10%;

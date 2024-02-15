@@ -25,6 +25,7 @@ html, body {
 	font-style: normal;
 	line-height: 1em;
 	background-color: transparent;
+	overflow-x: hidden;
 }
 
 

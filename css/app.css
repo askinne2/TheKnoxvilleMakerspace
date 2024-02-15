@@ -25,8 +25,6 @@ html, body {
 	font-style: normal;
 	line-height: 1em;
 	background-color: transparent;
-	
-
 }
 
 
@@ -36,13 +34,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2 {
 	font-weight: 900;
-	color: #0A2D4C;
+	color: var(--hotel-blue);
 	
 }
 
 h4, h5 {
 	font-weight: 700;
-	color: #3674AE;
+	color: var(--hotel-lt-blue);
 }
 
 p {
@@ -50,7 +48,6 @@ p {
 	font-size: 20px;
 	line-height: 26px;
 	color: var(--hotel-black);
-
 }
 
 a {
@@ -144,6 +141,9 @@ img {
 .bold-text {
 	font-weight: 700;
 }
+.no-shadow {
+	box-shadow: none;
+}
 
 /*
 *
@@ -156,16 +156,12 @@ img {
 	background-color:var(--hotel-lt-gray);
 }
 
-.tagline {
-	text-align: left;
-	padding-left: 7%;
-}
-
 .info-text-section {
 	padding-top: 2%;
 	padding-bottom: 2%;
 	
 }
+
 .hero {
 	background-color: var(--hotel-blue);
 	padding-top: 10%;
@@ -218,7 +214,6 @@ img {
 	mix-blend-mode: normal;
 	height: 100%;
 	width: 100%;
-	
 	background-image: url('../img/Home1.jpeg');
 	background-size: cover;
 	background-position: center center;
@@ -255,7 +250,6 @@ img {
 
 .intro {
 	padding: 5% 2%;
-	
 }
 
 .knox-column {	
@@ -292,38 +286,17 @@ img {
 	color: var(--hotel-white)
 }
 
-
-.feature-image {
-	margin-left: -2em;
-	margin-right: 2em;
-	width: 400px;
-	margin-bottom: -1em;
-	box-shadow: 5px 5px 5px 2px var(--hotel-lt-gray);
-}
-
-.location-image {
-	max-width: 50vh;
-	width: 300px;
-	margin-bottom: 5%;
-	box-shadow: 5px 5px 5px 2px var(--hotel-lt-gray);
-}
-
 .product-image {
 	width: 500px;
 	padding: 2%;
 
 }
 .feature-link {
-	text-align: right;
+	text-align: center;
 }
-
-.testimonial-quote {
-	width:150px;
-	max-width: 85%;
-	opacity: .1;
-	margin-bottom: -50px;
-	margin-left: -50px;
-	color: var(--hotel-lt-blue);
+.location-box {
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 /*
@@ -348,6 +321,7 @@ img {
 	border: none;
 	color: var(--hotel-white)
 }
+
 .input-button:hover {
 	background-color: var(--hotel-lt-blue);
 	font-weight: 900;
@@ -369,73 +343,10 @@ img {
 	background-color: transparent;
 }
 
-.newsletter {
-	background-color: rgb(25, 38, 25, .8);
-	
-}
-
-.no-shadow {
-	box-shadow: none;
-}
-
 /**
 *
-* FOOTER CSS
-*/
-
-.footer {
-	background-color: var(--hotel-lt-gray);
-	padding: 2% 2%;
-	text-align: center;
-	margin-top: 5%;
-}
-
-
-.footer-attribute-link {
-	text-decoration: none;
-	font-weight: 900;
-	color: var(--hotel-blue);
-}
-.footer-attribute-link:hover {
-	text-decoration: underline;
-	font-weight: 900;
-	color: var(--hotel-blue);}
-
-
-
-.accordion-title {
-	font-size: 1rem !important;
-}
-
-.location-box {
-	margin-top: 2%;
-	margin-bottom: 2%;
-}
-/*
-.room-type1 {
-	background-color: var(--hotel-lt-blue);
-	padding-top: 15%;
-	padding-bottom: 15%;
-	height: 50vh;
-}
-.room-type2 {
-	background-color: var(--hotel-gray);
-	padding-top: 15%;
-	padding-bottom: 15%;
-	height: 50vh;
-}
-.room-type3 {
-	background-color: var(--hotel-lt-blue);
-	padding-top: 15%;
-	padding-bottom: 15%;
-	height: 50vh;
-}
-.room-type4 {
-	background-color: var(--hotel-gray);
-	padding-top: 15%;
-	padding-bottom: 15%;
-	height: 50vh;
-}
+* ACTIVITY & EVENTS HEROS BOXES
+*
 */
 
 .activity1-wrap {
@@ -460,6 +371,7 @@ img {
 	z-index: 0;
 
 }
+
 .activity2-wrap {
 	position: relative;
 	overflow-x: hidden;
@@ -482,6 +394,7 @@ img {
 	z-index: 0;
 
 }
+
 .activity3-wrap {
 	position: relative;
 	overflow-x: hidden;
@@ -504,24 +417,28 @@ img {
 	z-index: 0;
 
 }
-.room-type4-wrap {
-	position: relative;
-	overflow-x: hidden;
+
+
+/**
+*
+* FOOTER CSS
+*/
+
+.footer {
+	background-color: var(--hotel-lt-gray);
+	padding: 2% 2%;
+	text-align: center;
+	margin-top: 5%;
 }
 
-.room-type4-wrap::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.5;
-	height: 100%;
-	width: 100%;
-	mix-blend-mode: multiply;
-	background-image: url('../img/room2.jpg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	z-index: 0;
+.footer-attribute-link {
+	text-decoration: none;
+	font-weight: 900;
+	color: var(--hotel-blue);
+}
 
+.footer-attribute-link:hover {
+	text-decoration: underline;
+	font-weight: 900;
+	color: var(--hotel-blue);
 }

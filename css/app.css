@@ -98,6 +98,7 @@ img {
 	justify-content: end;
 	align-items: center;
 	padding: 5px 10px;
+	z-index:999;
 }
 
 .dropdown .is-dropdown-submenu a, .dropdown.menu > li.is-dropdown-submenu-parent > a  {

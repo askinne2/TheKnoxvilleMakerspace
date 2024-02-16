@@ -11,7 +11,7 @@
 	--knox-white: #ffffff;
 	--knox-lt-yellow: #FBF1A0;
 	--knox-yellow: #F9E760;
-	--knox-lt-blue: #3674AE;
+	--knox-lt-blue: #054785;
 	--knox-gray: #BABCB4;
 	--knox-lt-gray: #F5F5F5;
 	--knox-blue: #0A2D4C;
@@ -163,6 +163,12 @@ img {
 	
 }
 
+.inactive-text {
+	font-style:italic;
+	font-size: 0.8rem;
+	color: lightgray;
+}
+
 .home-blocks {
 	padding: 2% 2%;
 }
@@ -190,9 +196,9 @@ img {
 
 .events-hero {
 	background-color: var(--knox-blue);
-	padding-top: 2%;
-	padding-bottom: 2%;
-	min-height: 20vh;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

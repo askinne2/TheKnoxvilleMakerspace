@@ -3,146 +3,176 @@
 /*
 *
 * BASIC STYLING
-*
+* This section contains the basic styles that apply to the whole website
 *
 */
 
 :root {
-	--knox-white: #ffffff;
-	--knox-lt-yellow: #FBF1A0;
-	--knox-yellow: #F9E760;
-	--knox-lt-blue: #054785;
-	--knox-gray: #BABCB4;
-	--knox-lt-gray: #F5F5F5;
-	--knox-blue: #0A2D4C;
-	--knox-black: #222222;
+	/* These are custom color variables that we can use throughout the website */
+	--knox-white: #ffffff;      /* Pure white */
+	--knox-lt-yellow: #FBF1A0; /* Light yellow */
+	--knox-yellow: #F9E760;    /* Bright yellow */
+	--knox-lt-blue: #054785;   /* Light blue */
+	--knox-gray: #BABCB4;      /* Gray */
+	--knox-lt-gray: #F5F5F5;   /* Light gray */
+	--knox-blue: #0A2D4C;      /* Dark blue */
+	--knox-black: #222222;     /* Almost black */
 }
 
+/* These styles apply to the entire HTML and body elements */
 html, body {
 	color: var(--knox-black);	
-	font-family: "tenez", sans-serif;
-	font-weight: 700;
+	font-family: "tenez", sans-serif; /* This sets the font to "tenez" */
+	font-weight: 700;                 /* This makes the text bold */
 	font-style: normal;
-	line-height: 1em;
+	line-height: 1em;                 /* This sets the space between lines of text */
 	background-color: transparent;
-	overflow-x: hidden;
+	overflow-x: hidden;               /* This prevents horizontal scrolling */
 }
 
-
+/* These styles apply to all headings and paragraphs */
 h1, h2, h3, h4, h5, h6, p {
-	font-family: "tenez", sans-serif;
+	font-family: "tenez", sans-serif; /* This sets the font to "tenez" */
 }
 
+/* These styles apply to h1 and h2 headings */
 h1, h2 {
-	font-weight: 900;
-	color: var(--knox-blue);
-	
+	font-weight: 900;                /* This makes the text extra bold */
+	color: var(--knox-blue);         /* This sets the text color to dark blue */
 }
 
+/* These styles apply to h4 and h5 headings */
 h4, h5 {
-	font-weight: 700;
-	color: var(--knox-lt-blue);
+	font-weight: 700;                /* This makes the text bold */
+	color: var(--knox-lt-blue);      /* This sets the text color to light blue */
 }
 
+/* These styles apply to paragraphs */
 p {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 26px;
-	color: var(--knox-black);
+	font-weight: 400;                /* This makes the text normal weight */
+	font-size: 20px;                 /* This sets the text size to 20 pixels */
+	line-height: 26px;               /* This sets the space between lines to 26 pixels */
+	color: var(--knox-black);        /* This sets the text color to almost black */
 }
 
+/* These styles apply to links */
 a {
-	color: var(--knox-blue);
+	color: var(--knox-blue);         /* This sets the link color to dark blue */
 }
 
+/* These styles apply to links when you hover over them */
 a:hover {
-	color: var(--knox-lt-blue);
+	color: var(--knox-lt-blue);      /* This changes the link color to light blue when hovered */
 }
 
+/* These styles set the size of h1 headings */
 h1 {
-	font-size: 3rem;
+	font-size: 3rem;                 /* This sets the text size to 3 times the default size */
 }
 
+/* These styles set the size of h2 headings */
 h2 {
-	font-size: 2.5rem;
+	font-size: 2.5rem;               /* This sets the text size to 2.5 times the default size */
 }
 
+/* These styles set the size of h3 headings */
 h3 {
-	font-size: 1.75rem;
+	font-size: 1.75rem;              /* This sets the text size to 1.75 times the default size */
 }
 
+/* These styles apply to the logo */
 .logo {
-	width: 250px;
-	max-width: 85%;
-	text-align: left;
+	width: 250px;                     /* This sets the width of the logo to 250 pixels */
+	max-width: 85%;                   /* This makes sure the logo doesn't get too big on small screens */
+	text-align: left;                 /* This aligns the logo to the left */
 }
 
+/* These styles apply to all images */
 img {
-	border-radius: 20px;
-	border: none;
+	border-radius: 20px;              /* This rounds the corners of images */
+	border: none;                     /* This removes any border around images */
 }
 
 /*
 *
 * MENU CSS 
-*
+* This section contains styles for the navigation menu
 *
 */
 
+/* This styles the dropdown arrow in the menu */
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-	color: var(--knox-white);
-	border-color: var(--knox-white) transparent transparent
+	color: var(--knox-white);         /* This sets the arrow color to white */
+	border-color: var(--knox-white) transparent transparent /* This creates a white triangle */
 }
+
+/* This styles the top bar of the menu */
 .top-bar, .top-bar ul, .title-bar { 
-	background-color: var(--knox-blue);
-	justify-content: end;
-	align-items: center;
-	padding: 5px 10px;
-	z-index:999;
+	background-color: var(--knox-blue); /* This sets the background color to dark blue */
+	justify-content: end;               /* This aligns items to the right */
+	align-items: center;                /* This centers items vertically */
+	padding: 5px 10px;                  /* This adds space around the menu */
+	z-index:999;                        /* This makes sure the menu appears on top of other elements */
 }
 
+/* This styles the dropdown menu items */
 .dropdown .is-dropdown-submenu a, .dropdown.menu > li.is-dropdown-submenu-parent > a  {
-	color: var(--knox-white);	
+	color: var(--knox-white);           /* This sets the text color to white */
 }
+
+/* This styles the dropdown menu items when you hover over them */
 .dropdown .is-dropdown-submenu a:hover, .dropdown.menu > li.is-dropdown-submenu-parent > a:hover {
-	color: var(--knox-gray);
+	color: var(--knox-gray);            /* This changes the text color to gray when hovered */
 }
 
+/* This styles the menu inputs, selects, links, and buttons */
 .menu input, .menu select, .menu a, .menu button {
-	color: var(--knox-white);
+	color: var(--knox-white);           /* This sets the text color to white */
 }
 
+/* This styles the menu links when you hover over them */
 .menu a:hover {
-	color: var(--knox-gray)
+	color: var(--knox-gray)             /* This changes the text color to gray when hovered */
 }
-
 
 /*
 *
 * HELPER CLASSES
-*
+* These are utility classes that can be used throughout the website
 *
 */
+
+/* This class makes text black */
 .black-text {
 	color: var(--knox-black);
 }
 
+/* This class makes text white */
 .white-text {
 	color: var(--knox-white);
 }
 
+/* This class makes text dark blue */
 .dark-blue-text {
 	color: var(--knox-blue);
 }
+
+/* This class makes text light blue */
 .blue-text {
 	color: var(--knox-lt-blue);
 }
+
+/* This class makes text extra bold */
 .heavy-text {
 	font-weight: 900;
 }
+
+/* This class makes text bold */
 .bold-text {
 	font-weight: 700;
 }
+
+/* This class removes any shadow */
 .no-shadow {
 	box-shadow: none;
 }
@@ -150,307 +180,344 @@ img {
 /*
 *
 * BEGIN BODY CSS
+* This section contains styles for the main content of the website
 *
 */
 
+/* This styles the top header */
 .top-header {
-	padding: 0.5em 1em;
-	background-color:var(--knox-lt-gray);
+	padding: 0.5em 1em;                /* This adds space around the header */
+	background-color:var(--knox-lt-gray); /* This sets the background color to light gray */
 }
 
+/* This styles the info text section */
 .info-text-section {
-	padding-top: 2%;
-	padding-bottom: 2%;
-	
+	padding-top: 2%;                    /* This adds space at the top */
+	padding-bottom: 2%;                 /* This adds space at the bottom */
 }
 
+/* This styles inactive text */
 .inactive-text {
-	font-style:italic;
-	font-size: 0.8rem;
-	color: lightgray;
+	font-style:italic;                  /* This makes the text italic */
+	font-size: 0.8rem;                  /* This makes the text smaller */
+	color: lightgray;                   /* This makes the text light gray */
 }
 
+/* This styles the home blocks section */
 .home-blocks {
-	padding: 2% 2%;
+	padding: 2% 2%;                     /* This adds space around the blocks */
 }
 
+/* This styles the hero section */
 .hero {
-	background-color: var(--knox-blue);
-	padding-top: 10%;
-	padding-bottom: 10%;
-	min-height: 50vh;
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+	background-color: var(--knox-blue); /* This sets the background color to dark blue */
+	padding-top: 10%;                   /* This adds space at the top */
+	padding-bottom: 10%;                /* This adds space at the bottom */
+	min-height: 50vh;                   /* This makes the hero section at least 50% of the viewport height */
+	display: flex;                       /* This uses flexbox for layout */
+    flex-direction: column;              /* This arranges items in a column */
+    justify-content: center;             /* This centers items vertically */
 }
 
+/* This styles the hero section on non-home pages */
 .hero-not-home {
-	background-color: var(--knox-blue);
-	padding-top: 2%;
-	padding-bottom: 2%;
-	min-height: 20vh;
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
+	background-color: var(--knox-blue); /* This sets the background color to dark blue */
+	padding-top: 2%;                    /* This adds space at the top */
+	padding-bottom: 2%;                 /* This adds space at the bottom */
+	min-height: 20vh;                   /* This makes the hero section at least 20% of the viewport height */
+	display: flex;                       /* This uses flexbox for layout */
+    flex-direction: column;              /* This arranges items in a column */
+    justify-content: center;             /* This centers items vertically */
 }
 
+/* This styles the events hero section */
 .events-hero {
-	background-color: var(--knox-blue);
-	padding-top: 5%;
-	padding-bottom: 5%;
-	min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	background-color: var(--knox-blue); /* This sets the background color to dark blue */
+	padding-top: 5%;                    /* This adds space at the top */
+	padding-bottom: 5%;                 /* This adds space at the bottom */
+	min-height: 30vh;                   /* This makes the hero section at least 30% of the viewport height */
+    display: flex;                       /* This uses flexbox for layout */
+    flex-direction: column;              /* This arranges items in a column */
+    justify-content: center;             /* This centers items vertically */
 }
 
+/* This styles the hero link container */
 .hero-link-container {
-	margin: 5% 0 2% 0;
+	margin: 5% 0 2% 0;                  /* This adds space around the links */
 }
+
+/* This styles the hero link */
 .hero-link {
-	z-index: 999;
-	position: relative;
+	z-index: 999;                       /* This makes sure the link appears on top of other elements */
+	position: relative;                  /* This allows the link to be positioned */
 }
 
+/* This styles the hero1 wrap */
 .hero1-wrap {
-	position: relative;
+	position: relative;                  /* This allows the wrap to be positioned */
 }
 
+/* This creates a background image for the hero1 wrap */
 .hero1-wrap::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: .1;
-	mix-blend-mode: normal;
-	height: 100%;
-	width: 100%;
-	background-image: url('../img/Home1.jpeg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	z-index: 0;
+	content: '';                         /* This creates an empty element */
+	position: absolute;                  /* This positions the element absolutely */
+	top: 0;                              /* This positions the element at the top */
+	left: 0;                             /* This positions the element at the left */
+	opacity: .1;                         /* This makes the image very transparent */
+	mix-blend-mode: normal;              /* This sets how the image blends with the background */
+	height: 100%;                        /* This makes the element full height */
+	width: 100%;                         /* This makes the element full width */
+	background-image: url('../img/Home1.jpeg'); /* This sets the background image */
+	background-size: cover;              /* This makes the image cover the entire element */
+	background-position: center center;  /* This centers the image */
+	background-repeat: no-repeat;        /* This prevents the image from repeating */
+	z-index: 0;                          /* This puts the image behind other elements */
 }
 
+/* This styles the hero2 wrap */
 .hero2-wrap {
-	position: relative;
+	position: relative;                  /* This allows the wrap to be positioned */
 }
 
+/* This creates a background image for the hero2 wrap */
 .hero2-wrap::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 1;
-	height: 100%;
-	width: 100%;
-	opacity: .1;
-	mix-blend-mode: normal;
-	background-image: url('../img/Home2.jpeg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	z-index: 0;
+	content: '';                         /* This creates an empty element */
+	position: absolute;                  /* This positions the element absolutely */
+	top: 0;                              /* This positions the element at the top */
+	left: 0;                             /* This positions the element at the left */
+	opacity: 1;                          /* This makes the image fully visible */
+	height: 100%;                        /* This makes the element full height */
+	width: 100%;                         /* This makes the element full width */
+	opacity: .1;                         /* This makes the image very transparent */
+	mix-blend-mode: normal;              /* This sets how the image blends with the background */
+	background-image: url('../img/Home2.jpeg'); /* This sets the background image */
+	background-size: cover;              /* This makes the image cover the entire element */
+	background-position: center center;  /* This centers the image */
+	background-repeat: no-repeat;        /* This prevents the image from repeating */
+	z-index: 0;                          /* This puts the image behind other elements */
 }
 
+/* This styles the hero text */
 .hero-text {
-	color: var(--knox-white);
-	position: relative;
-	z-index: 2;
+	color: var(--knox-white);           /* This sets the text color to white */
+	position: relative;                  /* This allows the text to be positioned */
+	z-index: 2;                          /* This puts the text in front of the background image */
 }
 
+/* This styles the intro section */
 .intro {
-	padding: 5% 2%;
+	padding: 5% 2%;                      /* This adds space around the section */
 }
 
+/* This styles the knox column */
 .knox-column {	
-	padding: 1em 1em;
-	margin: 0 auto;
+	padding: 1em 1em;                    /* This adds space around the column */
+	margin: 0 auto;                      /* This centers the column */
 }
 
+/* This styles images in the knox column */
 .knox-column img {
-	max-width: 100%;
-	margin: 0 auto;
+	max-width: 100%;                     /* This makes sure images don't overflow their container */
+	margin: 0 auto;                      /* This centers the images */
 }
 
+/* This styles the call-to-action box */
 .cta-box {
-	background-color: var(--knox-white);
-	border-radius: 20px;
-	border: 2px solid var(--knox-blue);
-	padding: 2em 1em;
+	background-color: var(--knox-white); /* This sets the background color to white */
+	border-radius: 20px;                 /* This rounds the corners */
+	border: 2px solid var(--knox-blue);  /* This adds a blue border */
+	padding: 2em 1em;                    /* This adds space inside the box */
 }
 
+/* This styles the call-to-action link */
 .cta-link {
-	background-color: var(--knox-yellow);
-	font-weight: 900;
-	padding: 10px 20px;
-	border-radius: 20px;
-	color: var(--knox-blue);
-	margin: 5px;
+	background-color: var(--knox-yellow); /* This sets the background color to yellow */
+	font-weight: 900;                    /* This makes the text extra bold */
+	padding: 10px 20px;                  /* This adds space around the text */
+	border-radius: 20px;                 /* This rounds the corners */
+	color: var(--knox-blue);             /* This sets the text color to dark blue */
+	margin: 5px;                         /* This adds space around the link */
 }
 
+/* This styles the call-to-action link when you hover over it */
 .cta-link:hover {
-	background-color: var(--knox-lt-blue);
-	font-weight: 900;
-	padding: 10px 20px;
-	border-radius: 20px;
-	color: var(--knox-white)
+	background-color: var(--knox-lt-blue); /* This changes the background color to light blue when hovered */
+	font-weight: 900;                      /* This makes the text extra bold */
+	padding: 10px 20px;                    /* This adds space around the text */
+	border-radius: 20px;                   /* This rounds the corners */
+	color: var(--knox-white)               /* This changes the text color to white when hovered */
 }
 
+/* This styles the product image */
 .product-image {
-	width: 500px;
-	padding: 2%;
+	width: 500px;                         /* This sets the width to 500 pixels */
+	padding: 2%;                          /* This adds space around the image */
+}
 
-}
+/* This styles the feature link */
 .feature-link {
-	text-align: center;
+	text-align: center;                   /* This centers the text */
 }
+
+/* This styles the location box */
 .location-box {
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top: 2%;                       /* This adds space at the top */
+	margin-bottom: 2%;                    /* This adds space at the bottom */
 }
 
 /*
 *
 * FORM
+* This section contains styles for forms
 *
 */
 
+/* This styles the knox form */
 .knox-form  {
-	padding: 1em 0 0 0;
+	padding: 1em 0 0 0;                   /* This adds space at the top */
 }
 
+/* This styles the knox form inputs and textareas */
 .knox-form input, .knox-form textarea {
-	border-radius: 10px;
+	border-radius: 10px;                  /* This rounds the corners */
 }
 
+/* This styles the input button */
 .input-button {
-	background-color: var(--knox-blue);
-	font-weight: 900;
-	padding: 10px 20px;
-	border-radius: 20px !important;
-	border: none;
-	color: var(--knox-white)
+	background-color: var(--knox-blue);   /* This sets the background color to dark blue */
+	font-weight: 900;                     /* This makes the text extra bold */
+	padding: 10px 20px;                   /* This adds space around the text */
+	border-radius: 20px !important;       /* This rounds the corners */
+	border: none;                         /* This removes the border */
+	color: var(--knox-white)              /* This sets the text color to white */
 }
 
+/* This styles the input button when you hover over it */
 .input-button:hover {
-	background-color: var(--knox-lt-blue);
-	font-weight: 900;
-	padding: 10px 20px;
-	border-radius: 20px;
-	border: none;
-	color: var(--knox-white)
+	background-color: var(--knox-lt-blue); /* This changes the background color to light blue when hovered */
+	font-weight: 900;                      /* This makes the text extra bold */
+	padding: 10px 20px;                    /* This adds space around the text */
+	border-radius: 20px;                   /* This rounds the corners */
+	border: none;                          /* This removes the border */
+	color: var(--knox-white)               /* This sets the text color to white */
 }
 
+/* This styles the label */
 .label {
-    display: inline-block;
-    padding: 0.33333rem 0.5rem;
-    border-radius: 0;
-    font-size: 1rem;
-    line-height: 1;
-    white-space: nowrap;
-    cursor: default;
-    color: var(--knox-blue);
-	background-color: transparent;
+    display: inline-block;                 /* This makes the label display inline */
+    padding: 0.33333rem 0.5rem;           /* This adds space around the label */
+    border-radius: 0;                      /* This removes rounded corners */
+    font-size: 1rem;                       /* This sets the text size */
+    line-height: 1;                        /* This sets the line height */
+    white-space: nowrap;                   /* This prevents the text from wrapping */
+    cursor: default;                       /* This changes the cursor to default */
+    color: var(--knox-blue);               /* This sets the text color to dark blue */
+	background-color: transparent;         /* This makes the background transparent */
 }
 
 /**
 *
 * ACTIVITY & EVENTS HEROS BOXES
+* This section contains styles for the activity and events boxes
 *
 */
 
+/* This styles the activity1 wrap */
 .activity1-wrap {
-	position: relative;
-	overflow-x: hidden;
-	border-radius: 20px;
+	position: relative;                    /* This allows the wrap to be positioned */
+	overflow-x: hidden;                    /* This prevents horizontal scrolling */
+	border-radius: 20px;                   /* This rounds the corners */
 }
 
+/* This creates a background image for the activity1 wrap */
 .activity1-wrap::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.5;
-	mix-blend-mode: overlay;
-	height: 100%;
-	width: 100%;
-	background-image: url('../img/Visit4.jpeg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	z-index: 0;
-
+	content: '';                           /* This creates an empty element */
+	position: absolute;                    /* This positions the element absolutely */
+	top: 0;                                /* This positions the element at the top */
+	left: 0;                               /* This positions the element at the left */
+	opacity: 0.5;                          /* This makes the image semi-transparent */
+	mix-blend-mode: overlay;               /* This sets how the image blends with the background */
+	height: 100%;                          /* This makes the element full height */
+	width: 100%;                           /* This makes the element full width */
+	background-image: url('../img/Visit4.jpeg'); /* This sets the background image */
+	background-size: cover;                /* This makes the image cover the entire element */
+	background-position: center center;    /* This centers the image */
+	background-repeat: no-repeat;          /* This prevents the image from repeating */
+	z-index: 0;                            /* This puts the image behind other elements */
 }
 
+/* This styles the activity2 wrap */
 .activity2-wrap {
-	position: relative;
-	overflow-x: hidden;
-	border-radius: 20px;
+	position: relative;                    /* This allows the wrap to be positioned */
+	overflow-x: hidden;                    /* This prevents horizontal scrolling */
+	border-radius: 20px;                   /* This rounds the corners */
 }
 
+/* This creates a background image for the activity2 wrap */
 .activity2-wrap::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.5;
-	mix-blend-mode: overlay;
-	height: 100%;
-	width: 100%;
-	background-image: url('../img/Visit5.jpeg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	z-index: 0;
-
+	content: '';                           /* This creates an empty element */
+	position: absolute;                    /* This positions the element absolutely */
+	top: 0;                                /* This positions the element at the top */
+	left: 0;                               /* This positions the element at the left */
+	opacity: 0.5;                          /* This makes the image semi-transparent */
+	mix-blend-mode: overlay;               /* This sets how the image blends with the background */
+	height: 100%;                          /* This makes the element full height */
+	width: 100%;                           /* This makes the element full width */
+	background-image: url('../img/Visit5.jpeg'); /* This sets the background image */
+	background-size: cover;                /* This makes the image cover the entire element */
+	background-position: center center;    /* This centers the image */
+	background-repeat: no-repeat;          /* This prevents the image from repeating */
+	z-index: 0;                            /* This puts the image behind other elements */
 }
 
+/* This styles the activity3 wrap */
 .activity3-wrap {
-	position: relative;
-	overflow-x: hidden;
-	border-radius: 20px;
+	position: relative;                    /* This allows the wrap to be positioned */
+	overflow-x: hidden;                    /* This prevents horizontal scrolling */
+	border-radius: 20px;                   /* This rounds the corners */
 }
 
+/* This creates a background image for the activity3 wrap */
 .activity3-wrap::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.5;
-	mix-blend-mode: overlay;
-	height: 100%;
-	width: 100%;
-	background-image: url('../img/Visit6.jpeg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	z-index: 0;
-
+	content: '';                           /* This creates an empty element */
+	position: absolute;                    /* This positions the element absolutely */
+	top: 0;                                /* This positions the element at the top */
+	left: 0;                               /* This positions the element at the left */
+	opacity: 0.5;                          /* This makes the image semi-transparent */
+	mix-blend-mode: overlay;               /* This sets how the image blends with the background */
+	height: 100%;                          /* This makes the element full height */
+	width: 100%;                           /* This makes the element full width */
+	background-image: url('../img/Visit6.jpeg'); /* This sets the background image */
+	background-size: cover;                /* This makes the image cover the entire element */
+	background-position: center center;    /* This centers the image */
+	background-repeat: no-repeat;          /* This prevents the image from repeating */
+	z-index: 0;                            /* This puts the image behind other elements */
 }
-
 
 /**
 *
 * FOOTER CSS
+* This section contains styles for the footer
 */
 
+/* This styles the footer */
 .footer {
-	background-color: var(--knox-lt-gray);
-	padding: 2% 2%;
-	text-align: center;
-	margin-top: 5%;
+	background-color: var(--knox-lt-gray); /* This sets the background color to light gray */
+	padding: 2% 2%;                        /* This adds space around the footer */
+	text-align: center;                    /* This centers the text */
+	margin-top: 5%;                        /* This adds space at the top */
 }
 
+/* This styles the footer attribute link */
 .footer-attribute-link {
-	text-decoration: none;
-	font-weight: 900;
-	color: var(--knox-blue);
+	text-decoration: none;                 /* This removes the underline from links */
+	font-weight: 900;                      /* This makes the text extra bold */
+	color: var(--knox-blue);               /* This sets the text color to dark blue */
 }
 
+/* This styles the footer attribute link when you hover over it */
 .footer-attribute-link:hover {
-	text-decoration: underline;
-	font-weight: 900;
-	color: var(--knox-blue);
+	text-decoration: underline;            /* This adds an underline when hovered */
+	font-weight: 900;                      /* This makes the text extra bold */
+	color: var(--knox-blue);               /* This sets the text color to dark blue */
 }
